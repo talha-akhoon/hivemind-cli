@@ -1,0 +1,38 @@
+{
+  "name": "hivemind-protocol-cli",
+  "version": "0.1.0",
+  "description": "CLI for HiveMind Protocol - Decentralized AI Training Marketplace",
+  "main": "lib/index.js",
+  "bin": {
+    "hivemind": "./bin/hivemind.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hivemind",
+    "hedera",
+    "ai",
+    "ml",
+    "blockchain",
+    "cli"
+  ],
+  "author": "Talha Akhoon <talha.akhoon@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@hashgraph/sdk": "^2.40.0",
+    "commander": "^11.0.0",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.5",
+    "ora": "^5.4.1",
+    "dotenv": "^16.3.1",
+    "axios": "^1.5.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/hivemind-cli.git"
+  }
+}
