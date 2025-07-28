@@ -1,6 +1,6 @@
 {
   "name": "hivemind-protocol-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "CLI for HiveMind Protocol - Decentralized AI Training Marketplace",
   "main": "lib/index.js",
   "bin": {
@@ -33,6 +33,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/hivemind-cli.git"
+    "url": "https://github.com/talha-akhoon/hivemind-cli.git"
   }
 }
