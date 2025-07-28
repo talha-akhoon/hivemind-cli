@@ -1,6 +1,6 @@
 {
   "name": "hivemind-protocol-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI for HiveMind Protocol - Decentralized AI Training Marketplace",
   "main": "lib/index.js",
   "bin": {
