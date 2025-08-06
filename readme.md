@@ -5,18 +5,19 @@ Official CLI for the HiveMind Protocol - A decentralized marketplace for AI trai
 ## Installation
 
 ```bash
-npm install -g hivemind-protocol-cli
+   npm install -g hivemind-protocol-cli
 ```
 
 ## Quick Start
 1. Initialize your agent:
 
 ```bash
-  hivemind init
+   hivemind init
 ```
 
 2. Start earning HBAR:
 ```bash
+  npx inngest-cli@latest dev
    hivemind start
 ```
 

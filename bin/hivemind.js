@@ -68,4 +68,33 @@ program
             .action(require('../lib/commands/account').list)
     )
 
+program
+    .command('serve')
+    .description('Start Inngest server (for development/debugging)')
+    .option('-p, --port <port>', 'Port to run server on', '3003')
+    .action((options) => {
+        process.env.INNGEST_PORT = options.port;
+        require('../lib/inngest/server');
+    });
+
+program
+    .command('trigger')
+    .description('Manually trigger marketplace scan')
+    .action(async () => {
+        const { inngest } = require('../lib/inngest/client');
+        const ora = require('ora');
+
+        const spinner = ora('Triggering marketplace scan...').start();
+
+        try {
+            await inngest.send({
+                name: 'marketplace/scan-trigger',
+                data: { manual: true, timestamp: new Date() }
+            });
+            spinner.succeed('Marketplace scan triggered successfully!');
+        } catch (error) {
+            spinner.fail(`Failed to trigger scan: ${error.message}`);
+        }
+    });
+
 program.parse(process.argv);
